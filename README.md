@@ -10,10 +10,11 @@ Here are some tips to use our code.
 4. Our code can be implemented on KITTI, Maicity, and our collected VLP-16 dataset.
 5. 'roslaunch vdbfusion_ros vdbfusion.launch config_file_name:=KITTI.yaml' is used to collect the lidar scans, then you should run "rosservice call /save_vdb_volume "path: '$Your saved map path$'", and the dense mapping process will be activated.
 "
+6. Notice that we use lidar range map projection, thus, when you use  lidar sensors with differetn lines, you should change the corresponding parameters in imageprojection.cpp.
 
 Any problem, please contact me via wangjk@ustc.edu.cn.
 
-Notice that our paper is still under review. 
+Notice that our paper is still under review. A more efficient version of our method will be relased after the paper is made decision.
 
 
 The following is the readme of vdbfusion. 
